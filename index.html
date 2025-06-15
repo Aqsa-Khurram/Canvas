@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My drawing space</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Playwrite+HU:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body style="margin: 0%;padding: 0px; background-color: #B6CAD6;">
+    <div class="border">
+        <div class="header">
+           My drawing space
+        </div>
+    </div>
+    <div class="Tools">
+        Tools:
+        <button class="button" id="pencilBtn"><img class="image" src="pencil.svg" alt="Pencil"></button>
+        <button class="button" id="fillBtn"><img class="image" src="fillin.svg" alt="Fill"></button>
+        <button class="button" id="eraseBtn"><img class="image" src="erase.png" alt="Erase"></button>
+        <button class="button" id="colorBtn"><div id="currcol"></div>  </button>
+        <button class="button" id="saveBtn"><img class="image" src="save.svg" alt="Save"> </button>
+    </div>
+
+    <div id="pencilSizeDropdown" style="display: none;" class="dropdown">
+        <div class="dropdown-item" data-size="5">Small</div>
+        <div class="dropdown-item" data-size="10">Medium</div>
+        <div class="dropdown-item" data-size="15">Large</div>
+    </div>
+    
+
+    <div id="colorPickerDropdown" style="display: none;">
+        <input type="color" id="colorInput" name="colorInput">
+    </div>
+
+    <div id="erase">
+        
+    </div>
+    <canvas class="canvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
